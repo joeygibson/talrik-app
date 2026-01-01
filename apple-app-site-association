@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "ZSXZ46HDXC.com.joeygibson.Talrik",
+        "paths": [
+          "/oauth/threads/callback"
+        ]
+      }
+    ]
+  }
+}
