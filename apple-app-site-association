@@ -3,9 +3,10 @@
     "apps": [],
     "details": [
       {
-        "appID": "ZSXZ46HDXC.com.joeygibson.Talrik",
+        "appID": "7TX2K2PSV2.com.joeygibson.Talrik",
         "paths": [
-          "/oauth/threads/callback"
+          "/oauth/threads/callback",
+          "/oauth/linkedin/callback"
         ]
       }
     ]
