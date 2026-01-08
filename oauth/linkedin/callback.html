@@ -52,14 +52,33 @@
     </div>
 
     <script>
-        // This page serves as the Universal Link target for LinkedIn OAuth
-        // iOS/macOS will intercept this URL and redirect to the Talrik app
-        // If for some reason the app doesn't open, show a message
-        setTimeout(function() {
+        // Extract the authorization code and state from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const state = urlParams.get('state');
+
+        if (code) {
+            // Redirect to custom URL scheme for reliable app callback
+            let redirectURL = 'talrik://oauth/linkedin/callback?code=' + encodeURIComponent(code);
+            if (state) {
+                redirectURL += '&state=' + encodeURIComponent(state);
+            }
+
+            // Attempt to open the app
+            window.location.href = redirectURL;
+
+            // Show success message after a delay
+            setTimeout(function() {
+                document.querySelector('.container').innerHTML =
+                    '<h1>Authentication Complete</h1>' +
+                    '<p>You can close this window and return to Talrik.</p>';
+            }, 1000);
+        } else {
+            // No code parameter, show error
             document.querySelector('.container').innerHTML =
-                '<h1>Authentication Complete</h1>' +
-                '<p>You can close this window and return to Talrik.</p>';
-        }, 3000);
+                '<h1>Authentication Failed</h1>' +
+                '<p>No authorization code received. Please try again.</p>';
+        }
     </script>
 </body>
 </html>
