@@ -5,8 +5,8 @@
       {
         "appID": "7TX2K2PSV2.com.joeygibson.Talrik",
         "paths": [
-          "/oauth/threads/callback",
-          "/oauth/linkedin/callback"
+          "/talrik-app/oauth/threads/callback",
+          "/talrik-app/oauth/linkedin/callback"
         ]
       }
     ]
