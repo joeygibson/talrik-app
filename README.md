@@ -1,6 +1,6 @@
 # Talrik Website & OAuth
 
-This repository hosts the marketing website and OAuth callback pages for [Talrik](https://github.com/jgibson/talrik), a native iOS/macOS app for cross-posting to multiple social media platforms.
+This repository hosts the marketing website and OAuth callback pages for [Talrik](https://github.com/joeygibson/talrik), a native iOS/macOS app for cross-posting to multiple social media platforms.
 
 ## Contents
 
@@ -26,11 +26,11 @@ These pages receive the authorization code from the OAuth provider and redirect 
 
 ## Hosting
 
-This site is hosted via GitHub Pages at: https://jgibson.github.io/talrik-app/
+This site is hosted via GitHub Pages at: https://joeygibson.github.io/talrik-app/
 
 ## Related
 
-- [Talrik iOS/macOS App](https://github.com/jgibson/talrik) - The main application repository
+- [Talrik iOS/macOS App](https://github.com/joeygibson/talrik) - The main application repository
 
 ---
 
