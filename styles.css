@@ -1036,8 +1036,11 @@ ul {
         justify-content: center;
     }
 
+    /* Scale down hero device mockup for tablets */
     .hero-device {
-        display: none;
+        transform: scale(0.75);
+        transform-origin: center top;
+        margin-top: var(--spacing-xl);
     }
 
     .features-grid {
@@ -1048,8 +1051,33 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Scale down devices showcase for tablets */
     .devices-showcase {
-        display: none;
+        transform: scale(0.7);
+        transform-origin: center top;
+        margin-bottom: calc(-100px);
+    }
+
+    .device-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mac-frame {
+        width: 400px;
+        height: 240px;
+    }
+
+    .ipad-frame {
+        width: 176px;
+        height: 240px;
+    }
+
+    .iphone-float {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: var(--spacing-lg);
     }
 
     .benefits-grid {
@@ -1121,6 +1149,15 @@ ul {
 
     .platforms-showcase {
         grid-template-columns: 1fr;
+    }
+
+    /* Hide mockups on phones - too small to be useful */
+    .hero-device {
+        display: none;
+    }
+
+    .devices-showcase {
+        display: none;
     }
 
     .footer-links {
